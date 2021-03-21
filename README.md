@@ -1,6 +1,8 @@
 # fcs
 
-- Check this app!  
+- Description  
+Use this app to search similar fonts in Google Fonts.  
+Check this app!  
 [Click this URL to launch the app.](https://fontcomparisonsystem.herokuapp.com/)
 
 <div align="center"><img src="https://user-images.githubusercontent.com/40710706/111905014-f11a0180-8a8c-11eb-86f6-d8e07742d0fb.png"></div>
