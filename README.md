@@ -1,7 +1,7 @@
 # fcs
 
-- Description  
-Use this app to search similar fonts in Google Fonts.  
+<span style="font-size: 100%;">- Description</ span>  
+Use this app to search similar fonts in [Google Fonts](https://fonts.google.com/).  
 Check this app!  
 [Click this URL to launch the app.](https://fontcomparisonsystem.herokuapp.com/)
 
