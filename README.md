@@ -1,7 +1,7 @@
 # Font Comparison System
 
 Use this app to search similar fonts in [Google Fonts](https://fonts.google.com/).  
-[Click this URL to launch the app.](https://fontcomparisonsystem.herokuapp.com/)
+[Click this URL to launch the app.](https://fontcomparisonsystem.herokuapp.com/)  
 (In case of error, please reload the page...)
 
 
