@@ -27,6 +27,7 @@ font_type_list_count_dict={}
 only_font_name_list=[]
 single_font_name_list=[]
 
+#filename,label,character--->list
 for (dir,subs,files) in os.walk('data/'):
 	for file in files:
 		target=os.path.join(dir,file)
@@ -43,6 +44,7 @@ file_list.sort()
 label_list.sort()
 character_list.sort()
 
+#fontname-weight--->font_type_list,fontname--->single_font_name_list
 for i in range(len(label_list)):
 	if current_label!=label_list[i].split('-')[0]:
 		c=0
@@ -67,6 +69,8 @@ only_font_name_list=list(font_type_list_count_dict.keys())
 # ~ print(len(single_font_name_list))
 
 # ~ print('single check')
+
+#display single font name
 for i in range(len(single_font_name_list)):
 	if not single_font_name_list[i] in only_font_name_list:
 		print(i)
@@ -78,6 +82,7 @@ current_result_nd=np.load('rank.npy')
 current_result_df=pd.DataFrame(current_result_nd).rank()
 # ~ print(current_result_df)
 
+#image display function
 def numpy_to_b64(array):
 	im_pil = Image.fromarray(array)
 	buff = BytesIO()
@@ -85,6 +90,7 @@ def numpy_to_b64(array):
 	im_b64 = base64.b64encode(buff.getvalue()).decode("utf-8")
 	return im_b64
 
+#Dash app
 app = dash.Dash(__name__)
 
 server=app.server
